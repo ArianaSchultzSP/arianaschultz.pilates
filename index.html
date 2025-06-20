@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ariana Schultz Studio de Pilates</title>
+    <link rel="icon" type="image/png" href="logocerto.png">
+    <link rel="stylesheet" href="estilo.css"> <!-- CSS será feito depois -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonte Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2d1f3bd0e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Menu Lateral Vertical -->
+    <!-- Botão hambúrguer -->
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<!-- Menu lateral -->
+<nav class="menu-lateral" id="menuLateral">
+    <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="studeo.html">Studeo</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="projetosNovidades.html">Projetos e Novidades</a></li>
+        <li><a href="https://wa.me/5541991335523">Aula Expeiremental</a></li>
+    </ul>
+</nav>
+<!-- painel superior -->
+<header class="painel-superior">
+  <div class="painel-item foto-esquerda">
+    <img src="pilates.jpg" alt="Foto de destaque" class="foto-circular onda-animada">
+  </div>
+
+  <div class="painel-item logo-area">
+    <img src="logocerto.jpg" alt="Logo do site" class="foto-circular onda-animada">
+    <h1 class="titulo-site">Ariana Schultz<br><span>Studio de Pilates</span></h1>
+  </div>
+
+  <div class="painel-item espaco-direita">
+    <img src="pilates.jpg" alt="Foto de destaque" class="foto-circular onda-animada">
+  </div>
+</header>
+
+
+
+
+
+
+    <!-- Corpo Principal -->
+    <main class="corpo-site">
+        <!-- Seção 1 (em cima) -->
+        <section class="secao-topo">
+            <h2>O Movimento Cura !<h2>
+            <p>O Studio de Pilates Ariana Schultz é um espaço acolhedor e profissional voltado para o cuidado com a saúde, bem-estar e qualidade de vida. Trabalhamos com foco em alongamento, força, postura e consciência corporal, respeitando os limites individuais de cada aluno.</p>
+        
+        </section>
+
+        <!-- Seções 2 e 3 (embaixo lado a lado) -->
+     
+     
+     
+     
+        <div class="galeria-container">
+        <button class="galeria-btn esquerda">&#10094;</button>
+
+  <div class="galeria-horizontal" id="galeria">
+            <img src="logocerto.jpg" alt="Foto 1" class="galeria-img">
+            <img src="pilates.jpg" alt="Foto 2" class="galeria-img">
+            <img src="logo.png" alt="Foto 3" class="galeria-img">
+             <img src="pilates.jpg" alt="Foto 4" class="galeria-img">
+             <img src="APARELHOS-1.webp" alt="Foto 5" class="galeria-img">
+             <img src="logocerto.jpg" alt="Foto 6" class="galeria-img">
+             <img src="APARELHOS-1.webp" alt="Foto 7" class="galeria-img">
+  <!-- Adicione mais imagens conforme necessário -->
+        </div>
+          <button class="galeria-btn direita">&#10095;</button>
+</div>
+
+
+
+
+    </main>
+
+    <!-- Aba de Contato-->
+   <section id="contato" class="contato">
+
+      <!-- botao do whats flutuante --> 
+      <a href="https://wa.me/5541991335523" target="_blank"
+          class="fixed top-5 right-5 w-16 h-16 z-50 rounded-full shadow-lg hover:scale-110 transition">
+          <img src="logo.whats.quadrado.webp" alt="WhatsApp"
+          class="w-full h-full object-contain rounded-full" />
+       </a>
+
+
+      <a href="https://wa.me/5541991335523" target="_blank" class="custom-pulse text-center text-cyan-800 font-semibold uppercase bg-cyan-100 rounded-xl px-6 py-4 shadow-md mt-8 max-w-xl mx-auto">
+         Entre em contato e agende sua Aula experimental
+       </a>
+
+
+
+    </section>
+
+        
+
+    <!-- Rodapé -->
+   <footer class="bg-cyan-600 text-white text-center py-6">
+      <p>&copy; 2025 Ariana Schultz Studio de Pilates. Todos os direitos reservados.</p>
+    </footer>
+
+
+
+<!-- Modal deve ficar dentro do <body> -->
+<div class="modal-img" id="modalImagem">
+  <span class="fechar" id="fecharModal">&times;</span>
+  <img id="imagemAmpliada" src="" alt="Imagem ampliada">
+</div>
+
+
+<!-- Apenas um script carregando seu JS externo -->
+<script src="script.js"></script>
+
+
+</body>
+
+
+
+
+</html>

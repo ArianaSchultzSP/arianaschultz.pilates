@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Site Completo</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- CSS será feito depois -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonte Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2d1f3bd0e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Menu Lateral Vertical -->
+    <!-- Botão hambúrguer -->
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<!-- Menu lateral -->
+<nav class="menu-lateral" id="menuLateral">
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="studeo.html">Studeo</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="https://wa.me/5599999999999">Aula Expeiremental</a></li>
+    </ul>
+</nav>
+<!-- painel superior -->
+<header class="painel-superior">
+    <!--<div class="painel-item foto-esquerda">
+        <img src="pilates.jpg" alt="Foto de destaque" class="foto-circular">
+    </div>-->
+
+    <div class="painel-item logo-area">
+        <img src="logocerto.jpg" alt="Logo do site" class="foto-circular">
+        <h1 class="titulo-site">Ariana Schultz<br><span>Studio de Pilates</span></h1>
+    </div>
+
+    <!--<div class="painel-item espaco-direita">
+        <img src="pilates.jpg" alt="Foto de destaque" class="foto-circular">
+    </div>-->
+</header>
+
+
+
+  <!-- descrição dos beneficios do solo -->
+   <section class="bg-white py-12 px-6 max-w-4xl mx-auto rounded-xl shadow-md">
+  <h2 class="text-3xl font-bold text-center text-cyan-800 mb-6 uppercase tracking-wide">Pilates de Solo</h2>
+
+  <p class="text-center text-gray-600 mb-10">
+    O método Pilates de Solo, criado por <strong>Joseph Pilates</strong>, é uma prática baseada no controle do corpo, foco e respiração. Ideal para fortalecer, reabilitar e melhorar a qualidade de vida com exercícios que usam apenas o peso corporal.
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-6 text-gray-700">
+    <div class="flex items-start gap-4">
+      <span class="text-cyan-600 text-2xl">💪</span>
+      <div>
+        <h3 class="font-semibold text-cyan-800">Fortalecimento do Core</h3>
+        <p>Trabalha abdômen, lombar e glúteos, essenciais para estabilidade e postura.</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4">
+      <span class="text-cyan-600 text-2xl">🧍‍♂️</span>
+      <div>
+        <h3 class="font-semibold text-cyan-800">Postura e Alinhamento</h3>
+        <p>Corrige desequilíbrios e alivia dores nas costas e articulações.</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4">
+      <span class="text-cyan-600 text-2xl">🤸‍♀️</span>
+      <div>
+        <h3 class="font-semibold text-cyan-800">Flexibilidade e Mobilidade</h3>
+        <p>Melhora a amplitude de movimento e alongamento de forma segura.</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4">
+      <span class="text-cyan-600 text-2xl">🧠</span>
+      <div>
+        <h3 class="font-semibold text-cyan-800">Consciência Corporal</h3>
+        <p>Aumenta o controle motor, coordenação e equilíbrio com foco na execução.</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4">
+      <span class="text-cyan-600 text-2xl">🧘‍♀️</span>
+      <div>
+        <h3 class="font-semibold text-cyan-800">Respiração Funcional</h3>
+        <p>Estimula o uso da respiração torácica para relaxamento e foco.</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4">
+      <span class="text-cyan-600 text-2xl">🦶</span>
+      <div>
+        <h3 class="font-semibold text-cyan-800">Baixo Impacto</h3>
+        <p>Seguro e eficaz para reabilitação, idosos, gestantes e iniciantes.</p>
+      </div>
+    </div>
+  </div>
+
+
+<section class="bg-white py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10 fonte-elegante">Nossos Serviços</h2>
+      
+        <div class="bg-cyan-50 p-6 rounded-lg shadow-md text-center">
+          <i class="fas fa-dumbbell text-4xl text-cyan-500 mb-4"></i>
+          <a href="pilatesTerapeutico.html" class="font-bold text-xl mb-2">Pilates Terapêutico</a>
+          <p>Para recuperação de lesões, dores nas costas e prevenção de patologias.</p>
+        </div>
+        <div class="bg-cyan-50 p-6 rounded-lg shadow-md text-center">
+          <i class="fas fa-heartbeat text-4xl text-cyan-500 mb-4"></i>
+          <a href="pilatesAparelho.html" class="font-bold text-xl mb-2">Pilates com Aparelhos</a>
+          <p>Para recuperação de lesões, dores nas costas e prevenção de patologias.</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <div class="mt-10 text-center">
+    <a href="#contato" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white py-3 px-6 rounded-full text-lg font-semibold transition">
+      Agende sua aula experimental
+    </a>
+  </div>
+</section>
+
+  
+ 
+</div>
+<a href="https://wa.me/5599999999999" target="_blank"
+   class="fixed top-5 right-5 w-16 h-16 z-50 rounded-full shadow-lg hover:scale-110 transition">
+  <img src="logo.whats.quadrado.webp" alt="WhatsApp"
+       class="w-full h-full object-contain rounded-full" />
+</a>
+
+
+    </main>
+
+
+    <!-- Rodapé -->
+    <footer class="bg-cyan-600 text-white text-center py-6">
+    <p>&copy; 2025 Ariana Schultz Studio de Pilates. Todos os direitos reservados.</p>
+  </footer>
+
+    <script>
+function toggleMenu() {
+    const menu = document.getElementById("menuLateral");
+    const corpo = document.querySelector("body");
+
+    menu.classList.toggle("aberto");
+    corpo.classList.toggle("com-menu-aberto");
+}
+</script>
+<script src="script.js"></script>
+
+
+</body>
+<script>
+document.getElementById("form-contato").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nome = document.getElementById("nome").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const mensagem = document.getElementById("mensagem").value.trim();
+    const status = document.getElementById("mensagem-status");
+
+    if (nome === "" || email === "" || mensagem === "") {
+        status.style.color = "red";
+        status.textContent = "Por favor, preencha todos os campos.";
+        return;
+    }
+
+    status.style.color = "green";
+    status.textContent = "Mensagem enviada com sucesso!";
+    document.getElementById("form-contato").reset();
+});
+</script>
+
+
+
+
+</html>

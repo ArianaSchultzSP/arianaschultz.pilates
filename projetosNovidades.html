@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Site Completo</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- CSS será feito depois -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonte Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2d1f3bd0e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Menu Lateral Vertical -->
+    <!-- Botão hambúrguer -->
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<!-- Menu lateral -->
+<nav class="menu-lateral" id="menuLateral">
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="studeo.html">Studeo</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="projetosNovidades.html">Projetos e Novidades</a></li>
+        <li><a href="#https://wa.me/5599999999999">Aula Expeiremental</a></li>
+    </ul>
+</nav>
+<!-- painel superior -->
+<header class="painel-superior">
+    <div class="painel-item foto-esquerda">
+        <img src="pilates.jpg" alt="Foto de destaque" class="foto-circular">
+    </div>
+
+    <div class="painel-item logo-area">
+        <img src="logocerto.jpg" alt="Logo do site" class="foto-circular">
+        <h1 class="titulo-site">Ariana Schultz<br><span>Studio de Pilates</span></h1>
+    </div>
+
+    <div class="painel-item espaco-direita">
+        <img src="pilates.jpg" alt="Foto de destaque" class="foto-circular">
+    </div>
+</header>
+
+
+
+
+
+    <!-- Corpo Principal -->
+    <main class="corpo-site">
+        
+     <body class="bg-gray-50 text-gray-800 font-sans">
+
+  <section class="max-w-5xl mx-auto py-12 px-4">
+    <h2 class="text-3xl font-bold text-center text-cyan-800 uppercase mb-10">Conteúdos do Studeo</h2>
+
+    <!-- Navegação entre abas -->
+    <div class="flex justify-center space-x-6 mb-8">
+      <button class="tab-button active" onclick="showTab('novidades')">Novidades</button>
+      <button class="tab-button" onclick="showTab('dicas')">Dicas</button>
+      <button class="tab-button" onclick="showTab('projetos')">Projetos</button>
+      <button class="tab-button" onclick="showTab('curiosidades')">Curiosidades</button>
+    </div>
+
+    <!-- Abas de conteúdo -->
+    <div id="novidades" class="tab-content block">
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-cyan-700 mb-2">Últimas do Studio</h3>
+        <p>Nova turma de Pilates Terapêutico disponível a partir de Julho! Reserve sua vaga com antecedência.</p>
+      </div>
+    </div>
+
+    <div id="dicas" class="tab-content hidden">
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-cyan-700 mb-2">Dicas de Saúde</h3>
+        <ul class="list-disc ml-6">
+          <li>Mantenha a respiração consciente durante os exercícios.</li>
+          <li>Evite longos períodos sentado. Levante-se a cada 50 minutos.</li>
+          <li>Beba água ao longo do dia, mesmo sem sede.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="projetos" class="tab-content hidden">
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-cyan-700 mb-2">Projetos em Andamento</h3>
+        <p>Estamos reformando uma nova sala exclusiva para atendimento com equipamentos avançados de Pilates!</p>
+      </div>
+    </div>
+
+    <!-- insere novas curiosidades -->
+
+    <div id="curiosidades" class="tab-content hidden">
+         <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-cyan-700 mb-2">Você Sabia?</h3>
+        <p>Joseph Pilates chamava seu método de "Contrologia" — a arte do controle do corpo pela mente.</p>
+        <a href="logocerto.jpg" target="_blank" class="text-cyan-700 hover:underline">
+         Foto Curiosa do Josephito em ação ----
+         </a>
+         <a href="imagemPilatesSolo.webp" target="_blank" class="text-cyan-700 hover:underline">
+         Pilates Solo
+         </a>
+    
+    </div>
+
+    </div>
+
+    <!-- Links úteis -->
+    <div class="mt-12 bg-cyan-50 p-6 rounded-xl shadow-inner">
+      <h3 class="text-xl font-semibold text-cyan-800 mb-4 text-center">Fale Conosco</h3>
+      <div class="flex flex-col md:flex-row justify-center gap-4 text-center">
+        <a href="https://instagram.com" target="_blank"
+           class="bg-cyan-600 text-white py-2 px-6 rounded-full hover:bg-cyan-700 transition">
+          Nosso Instagram
+        </a>
+        <a href="https://wa.me/5599999999999" target="_blank"
+           class="bg-green-500 text-white py-2 px-6 rounded-full hover:bg-green-600 transition">
+          WhatsApp de Contato
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script para alternar abas -->
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+     
+     
+     
+  
+
+    </main>
+
+    <!-- Aba de Contato-->
+   <section id="contato" class="contato">
+
+ <!-- botao do whats flutuante --> 
+<a href="https://wa.me/5599999999999" target="_blank"
+   class="fixed top-5 right-5 w-16 h-16 z-50 rounded-full shadow-lg hover:scale-110 transition">
+  <img src="logo.whats.quadrado.webp" alt="WhatsApp"
+       class="w-full h-full object-contain rounded-full" />
+</a>
+
+
+<a href="https://wa.me/5599999999999" target="_blank" class="custom-pulse text-center text-cyan-800 font-semibold uppercase bg-cyan-100 rounded-xl px-6 py-4 shadow-md mt-8 max-w-xl mx-auto">
+  Entre em contato e agende sua Aula experimental
+</a>
+
+
+
+</section>
+
+
+
+    <!-- Rodapé -->
+   <footer class="bg-cyan-600 text-white text-center py-6">
+    <p>&copy; 2025 Ariana Schultz Studio de Pilates. Todos os direitos reservados.</p>
+  </footer>
+
+<!-- Apenas um script carregando seu JS externo -->
+<script src="script.js"></script>
+
+<!-- Modal deve ficar dentro do <body> -->
+<div class="modal-img" id="modalImagem">
+  <span class="fechar" id="fecharModal">&times;</span>
+  <img id="imagemAmpliada" src="" alt="Imagem ampliada">
+</div>
+
+
+
+
+
+</body>
+
+
+
+
+</html>
